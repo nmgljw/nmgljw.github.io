@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - 内蒙古绿晶伟科技有限公司</title>
+    <meta name="description" content="联系内蒙古绿晶伟科技有限公司，获取智能试剂柜和标准物质报价">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>绿晶伟科技</h1>
+                <span>LU JING WEI</span>
+            </div>
+            <nav class="nav">
+                <a href="index.html">首页</a>
+                <a href="about.html">关于我们</a>
+                <a href="products.html">产品中心</a>
+                <a href="solutions.html">解决方案</a>
+                <a href="contact.html" class="active btn-primary">联系我们</a>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- 页面标题 -->
+    <section class="page-title">
+        <div class="container">
+            <h1>联系我们</h1>
+            <p>期待与您的合作</p>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- 联系信息 -->
+                <div class="contact-info">
+                    <h2>联系我们</h2>
+                    <p>如果您对我们的产品感兴趣，欢迎随时联系我们，我们的专业团队将为您提供咨询服务。</p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>公司地址</h4>
+                                <p>内蒙古自治区呼和浩特市</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>联系电话</h4>
+                                <p>请填写下方表单获取联系</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>电子邮箱</h4>
+                                <p>请填写下方表单获取联系</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>工作时间</h4>
+                                <p>周一至周五 9:00-18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 在线询盘表单 -->
+                <div class="contact-form-wrapper">
+                    <h2>在线询盘</h2>
+                    <p>请填写以下信息，我们将尽快与您联系</p>
+
+                    <form class="contact-form" id="inquiryForm">
+                        <div class="form-group">
+                            <label for="name">您的姓名 *</label>
+                            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                        </div>
+                        <div class="form-group">
+                            <label for="company">公司名称</label>
+                            <input type="text" id="company" name="company" placeholder="请输入公司名称">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">联系电话 *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="请输入联系电话">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">电子邮箱</label>
+                            <input type="email" id="email" name="email" placeholder="请输入电子邮箱">
+                        </div>
+                        <div class="form-group">
+                            <label for="product">感兴趣的产品</label>
+                            <select id="product" name="product">
+                                <option value="">请选择产品类型</option>
+                                <option value="智能试剂柜">智能试剂柜系列</option>
+                                <option value="标准物质">标准物质/标品标物</option>
+                                <option value="DIIC系统">DIIC数智物联系统</option>
+                                <option value="微生物质控品">微生物质控品</option>
+                                <option value="其他">其他咨询</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">留言内容 *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="请描述您的需求，如产品型号、数量、预算等"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-block">提交询盘</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 询盘成功提示 -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>询盘提交成功！</h3>
+            <p>感谢您的咨询，我们的专业团队将尽快与您联系。</p>
+            <button class="btn-primary" onclick="closeModal()">确定</button>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>内蒙古绿晶伟科技有限公司</h3>
+                    <p>专注于智能试剂存储管理与标准物质供应</p>
+                </div>
+                <div class="footer-links">
+                    <h4>快速链接</h4>
+                    <a href="index.html">首页</a>
+                    <a href="about.html">关于我们</a>
+                    <a href="products.html">产品中心</a>
+                    <a href="solutions.html">解决方案</a>
+                    <a href="contact.html">联系我们</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 内蒙古绿晶伟科技有限公司 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
